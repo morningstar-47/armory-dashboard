@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+  // Ensure we're using the App Router
+  experimental: {
+    appDir: true,
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -11,4 +17,4 @@ const nextConfig = {
   },
 }
 
-export default nextConfig
+module.exports = nextConfig

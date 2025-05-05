@@ -35,7 +35,6 @@ export async function middleware(req: NextRequest) {
   }
 
   // We'll validate the token in the API routes instead of here
-  // This avoids the JWT verification in the middleware
   return NextResponse.next()
 }
 
